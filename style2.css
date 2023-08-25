@@ -1,0 +1,158 @@
+ *, *::before, *::after {      /* to style for about webpage*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   background-color:#D6EAF8  ;
+}
+
+.exercise-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif 'Courier New', Courier, monospace;
+
+}
+
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: min(100% - 2rem, 1300px);
+  min-height: 70vh;
+  margin-inline: auto;
+  padding: 2rem;
+  animation: fade-in-right 1.5s forwards;
+
+}
+
+.about__heading {
+  font-size: 1.5rem;
+  max-width: 25ch;
+  margin-bottom: 2rem;
+}
+
+.about__subheading {
+  font-size: 1.5rem;
+  max-width: 50ch;
+}
+
+.about__buttons {
+  margin-top: 3.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.about__buttons > button {
+  padding: 0.7rem 2rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.about__buttons > .read-more-btn {
+  background: transparent;
+  border: 3px solid #2471A3 ;
+  color: #2980B9 ;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+}
+
+.about__buttons > .read-more-btn:hover {
+  transform: scale(1.07);
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+  background-color: #85C1E9;
+}
+
+.about__image > img {
+  width: 300px;
+  height: 425px;
+  border-radius: 10% ;
+  box-shadow: 5px 5px #F8F9F9;
+
+}
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+ 
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@media (prefers-reduced-motion) {
+  .about__container {
+    animation: none;
+  }
+
+  .about__buttons > .read-more-btn:hover {
+    transform: none;
+    transition: none;
+  }
+
+
+}
+
+@media (max-width: 830px) {
+  .about__subheading {
+    max-width: 25ch;
+  }
+}
+
+@media (max-width: 770px) {
+  .about__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .about__text {
+    text-align: left;
+  }
+
+  .about_buttons {
+    justify-content: center;
+  }
+}
+
+                                  /* to style for product webpage*/
+.wrapper h1{
+  text-align: center;
+ background-color: whitesmoke;
+}
+
+.grid-container {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+   grid-gap: 10px;
+  
+}
+.grid-item {
+  padding: 1rem;
+  font-size: 1.8rem;
+  background-color: whitesmoke;
+  color: gray;
+                            
+
+}
+                              /* to style for .contact-form webpage*/
+  .contact-form {                            
+   color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 30px;
+             }     
+             .contact-form h2{
+               padding: 20px;
+                text-shadow: 2px 2px;
+             } 
+.contact-form button{   
+  background: #7FB3D5;
+  border: 2px solid #17202A;
+  color: white;
+  padding: 15px  20px;
+}
